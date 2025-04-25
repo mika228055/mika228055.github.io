@@ -2,7 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>MikaOS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+    }
+    header {
+      background: #263238;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-top: 1em;
+    }
+    .download-button {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 1em 2em;
+      background-color: #1e88e5;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .download-button:hover {
+      background-color: #1565c0;
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.5em 1em;
+      background: #37474f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.back:hover {
+      background: #455a64;
+    }
+  </style>
 </head>
 <body>
     <script>
@@ -12,5 +65,28 @@
             localStorage.setItem("authenticated", "false");
         }
     </script>
-    <h1>testpage</h1>
+    <header>
+        <h1>MikaOS</h1>
+        <p>Легка, написана з нуля операційна система</p>
+      </header>
+      <main>
+        <section>
+          <h2>Про MikaOS</h2>
+          <p>MikaOS — це проста, навчальна ОС для архітектури x86, написана на C та Assembly. Має підтримку multitasking, FAT32, ELF, framebuffer, та інше.</p>
+        </section>
+    
+        <section>
+          <h2>Галерея</h2>
+          <img src="/mikaos/screenshot.png" alt="Скріншот MikaOS">
+          <p>Робочий стіл MikaOS</p>
+        </section>
+    
+        <a href="https://github.com/Mik228055/MikaOS/releases/latest" class="download-button">
+          Завантажити MikaOS
+        </a>
+    
+        <br>
+    
+        <a class="back" href="/">← Назад на головну</a>
+      </main>
 </body>
