@@ -8,6 +8,8 @@
     <script>
         if (localStorage.getItem("authenticated") !== "true") {
             window.location.href = "index.html";
+        } else {
+            localStorage.setItem("authenticated", "false");
         }
     </script>
     <h1>testpage</h1>
